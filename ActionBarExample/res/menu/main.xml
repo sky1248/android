@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.techpalle.actionbarexample.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+ <item
+        android:id="@+id/action_call"
+        android:title="Call"
+        android:icon="@drawable/ic_action_call"
+        app:showAsAction="ifRoom"/>
+  <item
+        android:id="@+id/action_cancel"
+        android:title="Cancel"
+        android:icon="@drawable/ic_action_cancel"
+        app:showAsAction="ifRoom"/>
+</menu>
