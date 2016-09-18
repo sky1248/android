@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.techpalle.b25_menus.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    <item android:id="@+id/item1"
+        android:orderInCategory="1" 
+        android:icon="@drawable/ic_action_cloud" 
+        android:title="Trainings"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/item6" android:title="Android Training"/>
+            <item android:id="@+id/item7" android:title="Java Training"/>
+            <item android:id="@+id/item8" android:title="dot net training"/>
+        </menu>
+    </item>
+    <item android:id="@+id/item2" 
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_action_call" 
+        android:title="Call"
+        app:showAsAction="ifRoom"></item>
+ <item android:id="@+id/item3" 
+        android:icon="@drawable/ic_action_sms" 
+        android:title="SMS"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom"></item>
+  <item android:id="@+id/item4" 
+        android:icon="@drawable/ic_action_search" 
+        android:title="Search"
+        android:orderInCategory="4"
+        app:showAsAction="ifRoom"></item>
+   <item android:id="@+id/item5" 
+        android:icon="@drawable/ic_action_email" 
+        android:title="Email"
+        android:orderInCategory="5"
+        app:showAsAction="ifRoom"></item>
+</menu>
