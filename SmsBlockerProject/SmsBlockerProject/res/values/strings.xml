@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">SmsBlockerProject</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="firstTerm">you can block any number for Message and Call (No-Limit) .</string>
+    <string name="secondTerm">Sms Blocker: You can also fetch number/name from the contact List to add to Block List.</string>
+    <string name="thirdTerm">Sms Blocker: You can also save the Blocked Messages List into text file in your Mobile.</string>
+    <string name="fourthTerm">Special Service: You can also Block special Number/Advertising Numbers for eg. (LM-XXXX).</string>
+    <string name="fifthTerm">Call Blocker: All Calls from the Disturbing Number shall be Blocked.</string>
+    <string name="sixthTerm">Back-Up: you can also keep the Backup in your pc also.</string>
+    <string name="Terms">Terms,Condition And Help</string>
+    <string name="seventhTerm">SMS: You can also send the Messages from This Application directly.</string>
+    <string name="eighthTerm">Terms And Condition : 1) No Charges are taken for Sms And Call Block facility.</string>
+    <string name="ninthTerm">2) Message sending will be charged as per your message Plan. No Extra Charge.</string>
+    
+</resources>

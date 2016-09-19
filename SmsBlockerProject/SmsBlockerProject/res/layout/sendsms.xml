@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/capture"
+     >
+
+    
+    <LinearLayout 
+        android:id="@+id/lin1"
+       android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarStyle"
+        
+        android:text="Send" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="cancel" 
+        style="?android:attr/buttonBarStyle"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Back"
+        style="?android:attr/buttonBarStyle" />
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lin2" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/lin1"
+        android:orientation="vertical">
+        
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Enter Number  "
+        android:layout_weight="1"
+        android:gravity="center"
+        
+        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:phoneNumber="true"
+        android:layout_marginRight="5dp"
+        
+        android:background="#fff">
+
+        <requestFocus />
+    </EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lin2"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Message Body"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:imeActionLabel=""
+            android:layout_weight="10.52"
+            android:gravity="top|left"
+            android:lines="7"
+            android:background="#fff"
+            android:hint="Enter Message Body                                "
+           android:singleLine="false"
+            android:inputType="textMultiLine"
+             >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    
+</RelativeLayout>

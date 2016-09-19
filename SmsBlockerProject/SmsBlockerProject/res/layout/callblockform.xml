@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/capture" >
+    
+<LinearLayout android:id="@+id/l1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+    
+    <Button
+        android:id="@+id/block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarStyle"
+        android:text="Block"
+        android:onClick="myClick"
+        >
+        </Button>
+        
+    <Button
+        android:id="@+id/blackList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="BlackList"
+        android:onClick="myClick"
+        style="?android:attr/buttonBarStyle">
+        </Button>
+        
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="UpdateList"
+        android:onClick="myClick"
+        style="?android:attr/buttonBarStyle">
+        
+        </Button>
+    </LinearLayout>
+
+<LinearLayout android:id="@+id/l2"
+    android:layout_below="@+id/l1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+    <TextView android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Enter The number"
+        android:layout_weight="1"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+    
+    <EditText android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:layout_weight="1"
+        />
+    
+    </LinearLayout>
+
+<LinearLayout android:id="@+id/l3"
+    android:layout_below="@+id/l2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+    <TextView android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Enter The Name"
+        android:layout_weight="1"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+    
+    <EditText android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:layout_weight="1"
+        />
+    
+    </LinearLayout>
+
+<LinearLayout android:id="@+id/l4"
+    android:layout_below="@+id/l3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+    <TextView android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Select Image"
+        android:layout_weight="1"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+    
+    <ImageView android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher"
+        android:onClick="myClick"
+        android:layout_weight="1"
+        />
+    
+    </LinearLayout>
+
+<RelativeLayout android:id="@+id/r2"
+    android:layout_below="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

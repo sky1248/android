@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:height="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/Terms"
+        android:background="@drawable/capture" />
+
+<ScrollView 
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#8D8F8C"
+    android:layout_weight=".3" 
+    android:layout_below="@+id/tv1">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_alignParentTop="true"
+            android:textSize="15sp"
+            android:text="@string/firstTerm"
+            android:layout_margin="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:textSize="15sp"
+            android:layout_margin="20dp"
+            android:text="@string/secondTerm"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        
+  </RelativeLayout>
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    
+   
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_below="@+id/textView2"
+        android:text="@string/thirdTerm"
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    
+   
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_below="@+id/textView2"
+        android:text="@string/fourthTerm"
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    
+   
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_below="@+id/textView2"
+        android:text="@string/fifthTerm"
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    
+   
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_below="@+id/textView2"
+        android:text="@string/sixthTerm"
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    
+   
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_below="@+id/textView2"
+        android:text="@string/seventhTerm"
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    
+   
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_below="@+id/textView2"
+        android:text="@string/eighthTerm"
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    
+   
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        
+        android:layout_below="@+id/textView2"
+        android:text="@string/ninthTerm"
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
+</LinearLayout>
+  </ScrollView>
+<Button 
+    android:id="@+id/agree"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/scrollView1"
+    android:layout_weight="1"
+android:textSize="40dp"
+android:background="@drawable/capture"
+    android:text="Next"/>  
+
+  </LinearLayout>

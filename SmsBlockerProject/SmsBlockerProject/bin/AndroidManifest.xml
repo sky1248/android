@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smsblockerproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+<uses-feature android:name="android.hardware.telephony" />
+<uses-permission android:name="android.permission.READ_SMS" />
+<uses-permission android:name="android.permission.WRITE_SMS" />
+<uses-permission android:name="android.permission.SEND_SMS" />
+<uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+<uses-permission android:name="android.permission.CALL_PHONE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.RECEIVE_SMS" />
+<uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="15" />
+    <supports-screens 
+android:largeScreens="true" 
+android:normalScreens="true" 
+android:smallScreens="true" 
+android:resizeable="true" 
+android:anyDensity="true" />
+
+    <application
+        android:icon="@drawable/police"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            
+        </activity>
+        <activity android:name="OptionPage"></activity>
+        <activity android:name="BlockList"></activity>
+        <activity android:name="SendSms"></activity>
+        <activity android:name="UserForm"></activity>
+        <receiver android:name="SmsBlockerService">
+    	<intent-filter android:priority="2147483647">
+        <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+        </intent-filter>
+        </receiver>
+        <receiver android:name="CallControllerReceiver">
+    	<intent-filter android:priority="96147483647">
+        <action android:name="android.intent.action.PHONE_STATE" />
+        </intent-filter>
+        </receiver>
+        <activity android:name="SelectPicture"></activity>
+        <activity android:name="MobileContactList"></activity>
+        <activity android:name="CallBlockForm"></activity>
+        <activity android:name="IncomingSmsList"></activity>
+        <activity android:name="BlockSpecialMessage"></activity>
+        <activity android:name="TermConditionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp">
+    <EditText
+        android:id="@+id/specialNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Special Number"
+        android:singleLine="false"
+        
+        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>
+    <Button
+        android:id="@+id/abuseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        style="?android:attr/buttonBarStyle"
+        android:layout_alignParentLeft="true"
+        android:text="Block Abuses" />
+
+    <Button
+        android:id="@+id/specialButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/abuseButton"
+        android:layout_alignParentRight="true"
+         style="?android:attr/buttonBarStyle"
+        android:text="Block Special Number" />
+    
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/specialButton"
+         style="?android:attr/buttonBarStyle"
+        android:layout_alignParentRight="true"
+        android:text="Back" />
+
+    
+</RelativeLayout>
